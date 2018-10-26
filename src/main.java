@@ -21,7 +21,8 @@ class main
 {
   public static void main(String args[]) throws JSONException {
 
-//    JSONObject jsonObj1 = new JSONObject("{\"payment\":{\"id\":111111}}");
+    JSONObject jsonObj1 = new JSONObject("{\"payment\":{\"id\":111111}}");
+    System.out.println(jsonObj1);
 //    JSONObject jsonObj2 = new JSONObject("{\"id\":000000}");
 //
 //    long idFormJsonobject = getPaymnetId(jsonObj2,"TC");
