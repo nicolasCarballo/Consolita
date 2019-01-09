@@ -1,0 +1,10 @@
+@startuml
+LogIn -> LogIn:Generacion QR
+LogIn -> ApiRest: Enviar el valor del qr a la Api
+device -> device: Escanear QR
+device -> ApiRest:Enviar resultado del sacan
+ApiRest -> ApiRest: validacion entre ambos QR
+ApiRest -> ApiRest: Guardar el dice en base
+ApiRest -> device: enviar mensaje de vinculacion exitosa
+ApiRest -> LogIn: enviar mensaje de vinculacion exitosa
+@enduml
